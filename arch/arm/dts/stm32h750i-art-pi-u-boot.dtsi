@@ -31,49 +31,47 @@
 &pinctrl {
 	fmc_pins: fmc@0 {
 		pins {
-			pinmux = <STM32_PINMUX('D', 0, AF12)>,
-				 <STM32_PINMUX('D', 1, AF12)>,
-				 <STM32_PINMUX('D', 8, AF12)>,
-				 <STM32_PINMUX('D', 9, AF12)>,
-				 <STM32_PINMUX('D',10, AF12)>,
-				 <STM32_PINMUX('D',14, AF12)>,
-				 <STM32_PINMUX('D',15, AF12)>,
+			pinmux = <STM32_PINMUX('F', 0, AF12)>,	/* A0 */
+				<STM32_PINMUX('F', 1, AF12)>,	/* A1 */
+				<STM32_PINMUX('F', 2, AF12)>,	/* A2 */
+				<STM32_PINMUX('F', 3, AF12)>,	/* A3 */
+				<STM32_PINMUX('F', 4, AF12)>,	/* A4 */
+				<STM32_PINMUX('F', 5, AF12)>,	/* A5 */
+				<STM32_PINMUX('F', 12, AF12)>,	/* A6 */
+				<STM32_PINMUX('F', 13, AF12)>,	/* A7 */
+				<STM32_PINMUX('F', 14, AF12)>,	/* A8 */
+				<STM32_PINMUX('F', 15, AF12)>,	/* A9 */
+				<STM32_PINMUX('G', 0, AF12)>,	/* A10 */
+				<STM32_PINMUX('G', 1, AF12)>,	/* A11 */
+				<STM32_PINMUX('G', 2, AF12)>,	/* A12 */
 
-				 <STM32_PINMUX('E', 0, AF12)>,
-				 <STM32_PINMUX('E', 1, AF12)>,
-				 <STM32_PINMUX('E', 7, AF12)>,
-				 <STM32_PINMUX('E', 8, AF12)>,
-				 <STM32_PINMUX('E', 9, AF12)>,
-				 <STM32_PINMUX('E',10, AF12)>,
-				 <STM32_PINMUX('E',11, AF12)>,
-				 <STM32_PINMUX('E',12, AF12)>,
-				 <STM32_PINMUX('E',13, AF12)>,
-				 <STM32_PINMUX('E',14, AF12)>,
-				 <STM32_PINMUX('E',15, AF12)>,
+				<STM32_PINMUX('D', 14, AF12)>,	/* D0 */
+				<STM32_PINMUX('D', 15, AF12)>,	/* D1 */
+				<STM32_PINMUX('D', 0, AF12)>,	/* D2 */
+				<STM32_PINMUX('D', 1, AF12)>,	/* D3 */
+				<STM32_PINMUX('E', 7, AF12)>,	/* D4 */
+				<STM32_PINMUX('E', 8, AF12)>,	/* D5 */
+				<STM32_PINMUX('E', 9, AF12)>,	/* D6 */
+				<STM32_PINMUX('E', 10, AF12)>,	/* D7 */
+				<STM32_PINMUX('E', 11, AF12)>,	/* D8 */
+				<STM32_PINMUX('E', 12, AF12)>,	/* D9 */
+				<STM32_PINMUX('E', 13, AF12)>,	/* D10 */
+				<STM32_PINMUX('E', 14, AF12)>,	/* D11 */
+				<STM32_PINMUX('E', 15, AF12)>,	/* D12 */
+				<STM32_PINMUX('D', 8, AF12)>,	/* D13 */
+				<STM32_PINMUX('D', 9, AF12)>,	/* D14 */
+				<STM32_PINMUX('D', 10, AF12)>,	/* D15 */
 
-				 <STM32_PINMUX('F', 0, AF12)>,
-				 <STM32_PINMUX('F', 1, AF12)>,
-				 <STM32_PINMUX('F', 2, AF12)>,
-				 <STM32_PINMUX('F', 3, AF12)>,
-				 <STM32_PINMUX('F', 4, AF12)>,
-				 <STM32_PINMUX('F', 5, AF12)>,
-				 <STM32_PINMUX('F',11, AF12)>,
-				 <STM32_PINMUX('F',12, AF12)>,
-				 <STM32_PINMUX('F',13, AF12)>,
-				 <STM32_PINMUX('F',14, AF12)>,
-				 <STM32_PINMUX('F',15, AF12)>,
-
-				 <STM32_PINMUX('G', 0, AF12)>,
-				 <STM32_PINMUX('G', 1, AF12)>,
-				 <STM32_PINMUX('G', 2, AF12)>,
-				 <STM32_PINMUX('G', 4, AF12)>,
-				 <STM32_PINMUX('G', 5, AF12)>,
-				 <STM32_PINMUX('G', 8, AF12)>,
-				 <STM32_PINMUX('G',15, AF12)>,
-
-				 <STM32_PINMUX('H', 5, AF12)>,
-				 <STM32_PINMUX('C', 2, AF12)>,
-				 <STM32_PINMUX('C', 3, AF12)>;
+				<STM32_PINMUX('C', 0, AF12)>,	/* WE */
+				<STM32_PINMUX('G', 15, AF12)>,	/* CAS */
+				<STM32_PINMUX('F', 11, AF12)>,	/* RAS */
+				<STM32_PINMUX('H', 3, AF12)>,	/* CS */
+				<STM32_PINMUX('G', 4, AF12)>,	/* BA0 */
+				<STM32_PINMUX('G', 5, AF12)>,	/* BA1 */
+				<STM32_PINMUX('H', 2, AF12)>,	/* CKE */
+				<STM32_PINMUX('G', 8, AF12)>,	/* CLK */
+				<STM32_PINMUX('E', 1, AF12)>,	/* UDQM */
+				<STM32_PINMUX('E', 0, AF12)>;	/* LDQM */
 
 			slew-rate = <3>;
 		};

@@ -19,7 +19,7 @@
 		gpio8 = &gpioi;
 		gpio9 = &gpioj;
 		gpio10 = &gpiok;
-		mmc0 = &sdmmc1;
+		// mmc0 = &sdmmc1;
 		pinctrl0 = &pinctrl;
 	};
 
@@ -121,9 +121,9 @@
 	bootph-all;
 };
 
-&sdmmc1 {
-	compatible = "st,stm32-sdmmc2", "arm,pl18x", "arm,primecell";
-};
+// &sdmmc1 {
+// 	compatible = "st,stm32-sdmmc2", "arm,pl18x", "arm,primecell";
+// };
 
 &timer5 {
 	bootph-all;
